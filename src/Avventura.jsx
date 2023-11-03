@@ -8,14 +8,14 @@ export function Avventura(){
                         <p>Nel regno di Eldoria, c'è un antico culto di Tiamath. All'interno della cripta del culto è custodito un drago d'ombra. 
                             Secondo la profezia  i sigilli della cripta si sarebbero spezzati durante il 14esimo giorno di Alturiac. 
                             Durante l'eclissi lunare il drago si sarebbe risvegliato portando con sè l'apocalisse. 
-                            Dal suo risveglio all'alba non ci sarebbe piu stato il sole per intero ma una perenne eclissi solare
+                            Dal suo risveglio all'alba non ci sarebbe piu stato il sole per intero ma una perenne eclissi solare.
                         </p>
                     </div>
                 </div>
                 <div className="container-card-home">
                     <div className="card-home">
                         <div className="character-img">
-                            <img src="src/assets/paladinoImg.jpg" />
+                            <img src= 'src/assets/paladinoImg.jpg' />
                         </div>
                         <div className="text-card">
                             <div className="characters-name">
