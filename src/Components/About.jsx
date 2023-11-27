@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Footer } from "../Footer"
 
 export function About() {
   const [isOpen, setIsOpen] = useState(null);
@@ -84,6 +84,7 @@ export function About() {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
