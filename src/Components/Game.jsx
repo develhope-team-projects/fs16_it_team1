@@ -1,7 +1,3 @@
-//Creazione di un array di oggetti e ogni oggetto dovrebbe definire un paragrafo con testo e proprietà
-//hidden(boolean). Per renderizzare i paragrafi faccio un map di questi array, ogni paragrafo avrà un id,
-// al click del paragrafo passa l id del paragrafo e modifica la proprietà hidden di quel elemento.
-//Aggiungi un index +1 per agire sul successivo.
 
 import { Paragraph } from "./Paragraph";
 import { useState } from 'react';
@@ -159,7 +155,7 @@ export function Game() {
               },
           },
 
-          //SceltaA(2)esio positivo dado
+          //SceltaA(2)esito positivo dado
           {
           id: 15,
           text: "Analizzi l'area circostante con estrema attenzione, gli odori di fumo e sangue ti permeano il naso ma la tua vista non ne ha ancora risentito. Noti una fiochissima luce violastra tra le varie macerie di una casa. Liberato il passaggio tra te e quella piccola luce vedi davanti a te un piccolo vaso che sembra contenere proprio quella luce. Spacchi il vaso con un calcio e ti ritrovi davanti a te ciò che sembra una scaglia. Il colore è simile all'ossidiana ma la consistenza è tutt'altro fuorchè dura, sembra come se si stesse ancora formando. E' una scaglia del drago ombra...Queste scaglie non si staccano direttamente dal corpo del drago come si potrebbe pensare ma crescono quasi come muffa nei posti collegati al drago. La particolarità, oltre alla fioca luce viola, è che fanno diventare più aggressivi i mostri nelle vicinanze, forse l'attacco è stato causato da questo.E mentre vieni assorbito dalle varie ipotesi ti dirigi verso l'unico punto non ancora controllato.",
@@ -269,7 +265,7 @@ export function Game() {
         if (index >= 0 && index < storyArray.length) {
           setUserStoryArray((userStoryArray) => [...userStoryArray, storyArray[index]]);
         } else {
-            setGameOver(true) 
+            setGameOver(true) //fa comparire un bottone con ricomincia
         }
       };
     
@@ -277,9 +273,9 @@ export function Game() {
         const diceScore = Math.floor(Math.random() * 20) + 1;
         alert(`Hai ottenuto ${diceScore}`);
         if(diceScore > step.challenge.limitScore){
-          handleUserChoice(step.challenge.goTo);  //se il numero uscito è maggiore di limitScore allore si aggiorna index
+          handleUserChoice(step.challenge.goTo);  //se il numero uscito è maggiore di limitScore allore si aggiorna index con il numero di goTo
         } else {
-          handleUserChoice(step.challenge.goToOver); // se minore index torna a 0
+          handleUserChoice(step.challenge.goToOver); // se minore aggiorna l'index con il numero della variabile goToOver
         }
       };
 
