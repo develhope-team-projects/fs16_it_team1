@@ -8,7 +8,7 @@ export function Adventure() {
 
     useEffect(() => {
         if (hero) {
-          navigate(`/game/${hero}`);
+          navigate(`/gametry/${hero}`);
         }
       }, [hero, navigate]); 
 
@@ -50,10 +50,10 @@ export function Adventure() {
                         </div>
                         <div className="text-card">
                             <div className="characters-name">
-                                <h2>Eldrin</h2>
+                                <p>Eldrin</p>
                             </div>
                             <div className="characters-nickname">
-                                <h3>Il Cavaliere Luminoso</h3>
+                                <p>Il Cavaliere Luminoso</p>
                             </div>
                             <div className="characters-description">
                                 <h3>Umano - Paladino</h3>
@@ -67,10 +67,10 @@ export function Adventure() {
                         </div>
                         <div className="text-card">
                             <div className="characters-name">
-                                <h2>Lyra</h2>
+                                <p>Lyra</p>
                             </div>
                             <div className="characters-nickname">
-                                <h3>La Strega delle fiamme</h3>
+                                <p>La Strega delle fiamme</p>
                             </div>
                             <div className="characters-description">
                                 <h3>Elfo - Mago</h3>

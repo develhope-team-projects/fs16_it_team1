@@ -16,32 +16,60 @@ export function Game() {
     const [choose, setChoose] = useState('')
     const [hidden, setHidden] = useState(true);
 
-    const paragraphArr = [
+    const paragraphArrPaladin = [
         {
             text: '1 Story',
             textP: "Nel bel mezzo di questa imminente catastrofe, si ergono figure di speranza e coraggio. Nella luce del sole brillante, emerge un paladino, un guerriero il cui destino è intrecciato indissolubilmente a quello del regno. Vestito in un'armatura scintillante di placche, i cui simboli sacri risplendono di un bagliore divino, il paladino avanza con occhi intensi e determinati. La sua spada sacra, pronta a essere sguainata contro le tenebre, è la lama che taglia l'oscurità, un baluardo contro la minaccia del drago d'ombra.",
+            id: 0,
+            hasCrossRoads: false,
+            hasChallenge: false,
+        },
+        {
+            text: '2 Story',
+            textP: "Ti viene assegnata una missione dal Re: ''c'è un villaggio poco lontano da qui, pochi mesi fa alcuni mostri hanno iniziato ad avvicinarsi sempre di più e da poco è finito in fiamme. Vorrei che andassi a controllare l'area e scoprissi la causa di questi strani avvicinamenti.'' ",
+            id: 1,
+            hasCrossRoads: false,
+            hasChallenge: false,
+        },
+        {
+            text: '3 Story',
+            textP: "Prendi il tuo equipaggiamento, la tua spada sacra, un piccolo rifornimento e all'alba ti dirigi verso il villaggio. La capitale è grande ma proprio per questo c'è un molta gente che va e viene, anche in carrozza, e infatti eccone una proprio vicino al palazzo reale, che fortuna. ",
+            id: 2,
+            hasCrossRoads: false,
+            hasChallenge: false,
+        },
+        {
+            text: '4 Story',
+            textP: "La carrozza è trainata da due cavalli grigiastri, uno di loro ha qualche graffio ai lati della groppa, saranno stati attaccati da qualche mostro prima di arrivare in città. A capo della carrozza c'è un uomo sulla mezz'età con lo sguardo perso nel vuoto.",
+            id: 3,
+            hasCrossRoads: false,
+            hasChallenge: false,
+        },
+    ];
+    
+    const paragraphArrMage = [
+        {
+            text: '1 Story',
             textM: "Le mani della maga sono agili e delicate, ma vibrano con un potere arcano immenso amplificato dal cristallo nel suo bastone. Ogni gesto che compie è studiato e preciso, mentre intona antiche formule magiche con una voce che risuona come una melodia incantata.",
             id: 0,
         },
         {
             text: '2 Story',
-            textP: "Ti viene assegnata una missione dal Re: ''c'è un villaggio poco lontano da qui, pochi mesi fa alcuni mostri hanno iniziato ad avvicinarsi sempre di più e da poco è finito in fiamme. Vorrei che andassi a controllare l'area e scoprissi la causa di questi strani avvicinamenti.'' ",
             textM: 'Background Mago',
             id: 1,
         },
         {
             text: '3 Story',
-            textP: "Prendi il tuo equipaggiamento, la tua spada sacra, un piccolo rifornimento e all'alba ti dirigi verso il villaggio. La capitale è grande ma proprio per questo c'è un molta gente che va e viene, anche in carrozza, e infatti eccone una proprio vicino al palazzo reale, che fortuna. ",
             textM: 'Inizio storia Mago',
             id: 2,
         },
         {
             text: '4 Story',
-            textP: "La carrozza è trainata da due cavalli grigiastri, uno di loro ha qualche graffio ai lati della groppa, saranno stati attaccati da qualche mostro prima di arrivare in città. A capo della carrozza c'è un uomo sulla mezz'età con lo sguardo perso nel vuoto.",
             textM: 'Inizio storia Mago',
             id: 3,
         },
     ];
+
 
     const chooseArray = [
         {
@@ -68,9 +96,9 @@ export function Game() {
     // FUNZIONI FUNZIONI FUNZIONI FUNZIONI
     const handleContinue = () => {
         if (number < 4) {
-            setData([...data, paragraphArr[number]]);
+            setData([...data, paragraphArrPaladin[number]]);
             setNumber(number + 1);
-        } else if (number == paragraphArr.length) {
+        } else if (number == paragraphArrPaladin.length) {
             setHidden((item) => !item)
             setNumber(number + 1);
             setSecondData([...secondData, paragraphArr2[number]])
