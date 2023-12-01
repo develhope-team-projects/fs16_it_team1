@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 import Login from "./Login"
 import { Home } from "./Components/Home.jsx";
 import { Adventure } from "./Components/Adventure.jsx";
