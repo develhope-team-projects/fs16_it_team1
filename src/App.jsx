@@ -21,7 +21,7 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/:user/:id" element={<Game />} />
+        {/* <Route path="/:user/:id" element={<Game />} /> */}
         <Route path="/home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Rules" element={<Rules/>} />

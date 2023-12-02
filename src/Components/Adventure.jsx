@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { Character } from "./Character"
 import { useNavigate } from "react-router-dom"
+import { HERO } from "../constant/index"
+
 
 export function Adventure() {
     const [hero, setHero] = useState('')
@@ -13,12 +15,11 @@ export function Adventure() {
       }, [hero, navigate]); 
 
     function choosedHero(id) {
-        console.log('click')
 
-        if (id && id === 'paladin') {
-            setHero('paladin')
+        if (id && id === HERO.PALADIN) {
+            setHero(HERO.PALADIN)
         } else {
-            setHero('mage')
+            setHero(HERO.MAGE)
         }
         
     }
@@ -44,7 +45,7 @@ export function Adventure() {
                     </div>
                 </div>
                 <div className="container-card-adventure">
-                    <div className='card-adventure' id='paladin' onClick={() => choosedHero('paladin')}>
+                    <div className='card-adventure' id={HERO.PALADIN} onClick={() => choosedHero(HERO.PALADIN)}>
                         <div className="character-img">
                             <img src="/paladinoImg.jpg" />
                         </div>
@@ -61,7 +62,7 @@ export function Adventure() {
                             </div>
                         </div>
                     </div>
-                    <div className='card-adventure' id="mage" onClick={() => choosedHero('mage')}>
+                    <div className='card-adventure' id={HERO.MAGE} onClick={() => choosedHero(HERO.MAGE)}>
                         <div className="character-img">
                             <img src="/Elf-Female-Mage.jpg" />
                         </div>
