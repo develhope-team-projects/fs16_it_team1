@@ -40,7 +40,7 @@ export function Adventure() {
                         <p>
                             Due avventurieri coraggiosi si metteranno a rischio per salvare l'umanità.
                         </p>
-                        <h2>Scegli il tuo eroe:</h2>
+                        <h2 className="text-adventure-h2">Scegli il tuo eroe</h2>
                     </div>
                 </div>
                 <div className="container-card-adventure">
