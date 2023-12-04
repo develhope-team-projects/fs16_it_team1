@@ -136,7 +136,7 @@ const storyArrayPaladin = [
             },
             {
                 text: "Ti dirigi direttamente all'edificio integro.",
-                goTo: 6
+                goTo: 17
             },
         ]
     },

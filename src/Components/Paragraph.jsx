@@ -12,7 +12,7 @@ export const Paragraph = ({
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="container-text-game">
       <div className="text-game">{step.text}</div>
       {!hideButton && 
           <div>

@@ -46,7 +46,7 @@ export function Adventure() {
                 <div className="container-card-adventure">
                     <div className='card-adventure' id='paladin' onClick={() => choosedHero('paladin')}>
                         <div className="character-img">
-                            <img src="/paladinoImg.jpg" />
+                            <img src="src\assets\dnd-paladin-dice-symbol.jpg" />
                         </div>
                         <div className="text-card">
                             <div className="characters-name">
@@ -63,7 +63,7 @@ export function Adventure() {
                     </div>
                     <div className='card-adventure' id="mage" onClick={() => choosedHero('mage')}>
                         <div className="character-img">
-                            <img src="/Elf-Female-Mage.jpg" />
+                            <img src="src\assets\dnd-mage-symbol.jpg" />
                         </div>
                         <div className="text-card">
                             <div className="characters-name">

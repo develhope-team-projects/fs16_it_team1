@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 import Login from "./Login"
 import { Home } from "./Components/Home.jsx";
 import { Adventure } from "./Components/Adventure.jsx";
@@ -16,6 +9,10 @@ import Navbar from './Components/NavBar';
 import { Rules } from "./Rules"
 import { About } from "./Components/About";
 import "./Style/App.css"
+import "./Style/About.css"
+import "./Style/footer.css"
+import "./Style/rules.css"
+import "./Style/Root.css"
 import "./Home.css"
 import './style.css'
   
