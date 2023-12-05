@@ -5,7 +5,6 @@
 
 import { useState } from "react"
 import { useParams } from "react-router-dom"
-import { Character } from "./Character"
 
 
 export function Game() {

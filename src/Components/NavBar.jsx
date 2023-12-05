@@ -44,7 +44,7 @@ function Navbar() {
           </div>
         </li>
         <li className="List-Nav">
-          <h2 className="Title">Dragons</h2>
+          <h2 className="Title">Eldoria's Eclypse</h2>
         </li>
 
         <li className="List-Nav">
