@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 
 
 .background-home {
-    background-image: url("../assets/images/Skyrim-Oblivion-dragon.webp");
+    background-image: url("../assets/images/75ab42cb63b54597b0e1488c1901d622.png");
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(80%);
@@ -280,7 +280,7 @@ body::-webkit-scrollbar {
 
     /* HOME */
     .background-home {
-        background-image: url("../assets/images/Skyrim-Oblivion-dragon.webp");
+        background-image: url("../assets/images/75ab42cb63b54597b0e1488c1901d622.png");
         background-repeat: no-repeat;
         background-size: cover;
         filter: brightness(80%);
